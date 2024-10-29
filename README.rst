@@ -16,7 +16,7 @@ Configuration
 Follow these steps to configure the payment provider in Odoo:
 
 1. **Merchant ID and Secret Key:**
-   - Obtain your Merchant ID and Secret Key from the Sadad panel.
+   - Obtain your Merchant ID and Secret Key from the custom panel.
 
 2. **Web Checkout Overview:**
    - **Web Checkout 2.1:** Customers fill in details and place orders on your website's checkout page.
@@ -38,7 +38,7 @@ Follow these steps to configure the payment provider in Odoo:
 4. **custom Payment Panel Configuration:**
    - Set the domain in the Custom panel.
    - Generate test or live secret keys by clicking the "Generate" button.
-   - Ensure both the e-commerce website domain and the Sadad panel domain are the same.
+   - Ensure both the e-commerce website domain and the custom panel domain are the same.
 
 .. .. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188505/sadad2_fnvuzs.png
 ..    :alt: Sadad Payment Panel Configuration
@@ -57,7 +57,7 @@ Usage
 -----
 
 1. During checkout, users can select custom as a payment option on your website.
-2. After clicking "Pay Now," users will be redirected to the Sadad payment screen to complete the transaction.
+2. After clicking "Pay Now," users will be redirected to the custom payment screen to complete the transaction.
 
 .. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188504/sadad4_qhzhsw.png
    :alt: custom Payment Option in Website
