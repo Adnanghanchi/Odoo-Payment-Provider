@@ -40,18 +40,18 @@ Follow these steps to configure the Sadad payment provider in Odoo:
    - Generate test or live secret keys by clicking the "Generate" button.
    - Ensure both the e-commerce website domain and the Sadad panel domain are the same.
 
-.. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188505/sadad2_fnvuzs.png
-   :alt: Sadad Payment Panel Configuration
-   :width: 80%
+.. .. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188505/sadad2_fnvuzs.png
+..    :alt: Sadad Payment Panel Configuration
+..    :width: 80%
 
 5. **Callback URL Configuration:**
    - Set the callback URL to redirect to the e-commerce site after payment completion.
    - Example format: `https://abc1234.com/payment/sadad/return`
    - Set an alert email to receive notifications from Sadad.
 
-.. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188504/sadad3_tjmhzh.png
-   :alt: Callback URL Configuration
-   :width: 80%
+.. .. image:: https://res.cloudinary.com/dqioxqal2/image/upload/v1730188504/sadad3_tjmhzh.png
+..    :alt: Callback URL Configuration
+..    :width: 80%
 
 Usage
 -----
