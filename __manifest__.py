@@ -1,0 +1,23 @@
+{
+    'name': 'Payment Provider: Sadad',
+    'version': '1.0',
+    'sequence': 10,
+    'price': 250.00,
+    'currency': 'USD',
+    'website':'https://www.sufalamtech.com',
+    'category': 'Accounting/Payment Providers',
+    'summary': 'Integrate Sadad payment gateway with Odoo',
+    'description': """<p>Integrate Sadad QA payment gateway with Odoo to streamline website and invoice payments effortlessly.</p>""",
+    'depends': ['payment', 'account', 'website', 'website_sale'],
+    'data': [
+        'views/payment_provider_views.xml',
+        'views/payment_sadad_templates.xml',
+        'data/payment_method_data.xml',     
+        'data/payment_provider_data.xml', 
+    ],
+    'images': ['img/SADAD.png'],
+     'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

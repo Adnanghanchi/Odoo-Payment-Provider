@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_payment_transaction_form_sadad" model="ir.ui.view">
+        <field name="name">payment.transaction.form.sadad</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.view_payment_transaction_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='provider_reference']" position="after">
+                <field name="sadad_transaction_id" attrs="{'invisible': [('provider_code', '!=', 'sadad')]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

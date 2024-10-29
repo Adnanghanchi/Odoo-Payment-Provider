@@ -1,0 +1,24 @@
+<odoo>
+    <record id="payment_method_sadad_2" model="payment.method">
+        <field name="name">Sadad</field>
+        <field name="code">sadad</field>
+        <field name="sequence">1</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment_sadad/static/img/sadad.png"/>
+        <field name="support_tokenization">True</field>
+        <field name="support_express_checkout">False</field>
+        <field name="support_refund">partial</field>
+	<field name="supported_country_ids" eval="[Command.set([
+                         ref('base.qa'),
+                     ])]" />
+        <field name="supported_currency_ids" eval="[Command.set([
+                         ref('base.QAR'),
+                     ])]" />
+    </record>
+
+    <record id="account_payment_method_sadad_in" model="account.payment.method">
+        <field name="name">Sadad </field>
+        <field name="code">sadad</field>
+        <field name="payment_type">inbound</field>
+    </record>
+</odoo>

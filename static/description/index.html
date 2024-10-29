@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadad Payment Provider for Odoo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            border-radius: 15px;
+            background-color: #8fdff1;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        .img-container {
+
+            margin-top: 20px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #c4c4c4;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sadad Payment Provider for Odoo</h1>
+        <p>This module integrates the Sadad payment gateway with Odoo, enabling secure and seamless online payments.</p>
+
+        <hr />
+
+        <h2>➤ Installation</h2>
+        <ol>
+            <li>Clone the module repository into your Odoo addons directory.</li>
+            <li>Update the module list in Odoo.</li>
+            <li>Install the <strong>Sadad Payment Provider</strong> module.</li>
+        </ol>
+
+        <h2>➤ Configuration</h2>
+        <p>Follow these steps to configure the Sadad payment provider in Odoo:</p>
+        <ol>
+            <li><strong>Merchant ID and Secret Key:</strong>
+                <ul style="list-style-type:circle">
+                    <li>Obtain your Merchant ID and Secret Key from the Sadad panel.</li>
+                </ul>
+            </li>
+            <li><strong>Web Checkout Overview:</strong>
+                <ul style="list-style-type:circle">
+                    <li><strong>Web Checkout 2.1:</strong> Customers fill in details and place orders on your website's
+                        checkout page.</li>
+                </ul>
+            </li>
+            <li><strong>Configuration Steps in Odoo:</strong>
+                <ul style="list-style-type:circle">
+                    <li>Navigate to <em>Payment Providers</em> in Odoo.</li>
+                    <li>Enable the Sadad payment method and toggle test mode if needed.</li>
+                    <li>Fill in the required fields:
+                        <ul style="list-style-type:disk;">
+                            <li>Merchant ID</li>
+                            <li>Client Secret Key</li>
+                            <li>Domain (without http or https, e.g., sufalamtechnologies.com)</li>
+                            <li>Web Checkout API version</li>
+                            <li>Language (Arabic or English)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721808315/sadad_payment_1_ujcjac.png"
+                        alt="Sadad Payment Configuration in Odoo" style="width:100%;">
+                </div>
+            </li>
+            <li><strong>Sadad Payment Panel Configuration:</strong>
+                <ul style="list-style-type:circle">
+                    <li>Set the domain in the Sadad panel.</li>
+                    <li>Generate test or live secret keys by clicking the "Generate" button.</li>
+                    <li>Ensure both the e-commerce website domain and the Sadad panel domain are the same.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721808314/sadad_payment_4_isiqd8.png"
+                        alt="Sadad Payment Panel Configuration" style="width:100%;">
+                </div>
+            </li>
+            <li><strong>Callback URL Configuration:</strong>
+                <ul style="list-style-type:circle">
+                    <li>Set the callback URL to redirect to the e-commerce site after payment completion.</li>
+                    <li>Example format: <em>https://sufalamtechnologies.com/payment/sadad/return</em></li>
+                    <li>Set an alert email to receive notifications from Sadad.</li>
+                </ul>
+                <div class="img-container">
+                    <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721808315/sadad_payment_5_pix1mz.png"
+                        alt="Callback URL Configuration" style="width:100%;">
+                </div>
+            </li>
+        </ol>
+
+        <h2>➤ Usage</h2>
+        <p>During checkout, users can select Sadad as a payment option on your website. After clicking "Pay Now," users
+            will be redirected to the Sadad payment screen to complete the transaction.</p>
+        <div class="img-container">
+            <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721808314/sadad_payment_2_xqze4e.png"
+                alt="Sadad Payment Option in Website" style="width:100%;">
+        </div>
+
+        <h2>➤ Success Transaction</h2>
+        <div class="img-container">
+            <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721974558/sadad_payment_7_vvoso2.png"
+                alt="Success Payment" style="width:100%;">
+        </div>
+
+        <h2>➤ Features</h2>
+        <ul style="list-style-type:circle">
+            <li>Integrate Sadad Payment Gateway with Odoo eCommerce.</li>
+            <li>Supports Web Checkout API versions 2.1</li>
+            <li>Allows users to set language preference (Arabic or English).</li>
+            <li>Easy to configure and use.</li>
+        </ul>
+        <div class="img-container">
+            <img src="https://res.cloudinary.com/djpjbtcv0/image/upload/v1721808315/sadad_payment_3_x4lapo.png"
+                alt="Redirect in Payment Screen" style="width:100%;">
+        </div>
+
+        <h2>Support</h2>
+        <p>For any issues or support, please contact us at <a
+                href="mailto:support@sufalamtech.com">support@sufalamtech.com</a>.</p>
+
+    </div>
+</body>
+
+</html>

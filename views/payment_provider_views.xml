@@ -1,0 +1,21 @@
+<odoo>
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">payment.provider.form.sadad</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position='inside'>
+                <group invisible="code != 'sadad'">
+                    <field name="sadad_merchant_id" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_secret_key" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_domain" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_api_url" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_web_checkout" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_language" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_qa_webcheckout_hide_loader" required="code == 'sadad' and state != 'disabled'"/>
+                    <field name="sadad_qa_showdialog" required="code == 'sadad' and state != 'disabled'" />
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
